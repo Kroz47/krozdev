@@ -1,17 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kr0z - schogotten</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bana Tıkla</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #1e1e2f;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      flex-direction: column;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background: #5865f2;
+      color: white;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #4752c4;
+    }
+
+    #mesaj {
+      margin-top: 20px;
+      font-size: 20px;
+      display: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+  </style>
 </head>
 <body>
-        <img src="kroz.jpeg" class="krozphoto" alt="krozphoto">
-        <h1>Kroz</h1>
-        <h2>hiç bir şey yapmayan developer</h2>
-        <h3>1-2 ay yokum 3 ayı geçtiyse ölmüşümdür.</h3>
-        <h6>tayyibin a-</h6>
-    
+  <button onclick="goster()">Bana Tıkla</button>
+  <p id="mesaj">🎉 Hekseon Femboydur! 🎉</p>
+  <br>
+  <br>
+  <button onclick="goster2()"><a href="https://discord.gg/Wu6XVubVfs">Discord</a></button>
+  <script>
+    function goster() {
+      document.getElementById("mesaj").style.display = "block";
+    }
+  </script>
 </body>
 </html>
