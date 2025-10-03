@@ -1,20 +1,64 @@
-
-*
-{
-    background-color: darkolivegreen;
-    color: rgb(182, 182, 182);
-}
-
-.krozphoto
-{
-    width: 150px;
-    height: 150px;
-    border-radius: 200px;
-    margin: 0 auto;
-    display: block;
-}
-
-h1,h2,h3,h6
-{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c2f33; /* Discord'a benzer koyu arkaplan */
+    color: #ffffff; /* Beyaz metin rengi */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
     text-align: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #36393f; /* İçerik kutusu arkaplanı */
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #7289da; /* Discord mavisi */
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+/* Discord Butonunun Stili */
+.discord-button {
+    display: inline-block;
+    background-color: #7289da; /* Ana Discord mavisi */
+    color: #ffffff;
+    padding: 15px 30px;
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 4px #677bc4; /* 3D efekti için gölge */
+    border: none;
+}
+
+.discord-button:hover {
+    background-color: #677bc4; /* Hafif koyu hover rengi */
+    transform: translateY(1px); /* Tıklama hissi */
+    box-shadow: 0 3px #5865f2; /* Gölgeyi küçült */
+}
+
+.discord-button:active {
+    transform: translateY(3px); /* Daha derin tıklama hissi */
+    box-shadow: 0 0 #5865f2; 
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #99aab5;
 }
